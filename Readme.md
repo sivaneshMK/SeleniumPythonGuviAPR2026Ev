@@ -26,6 +26,8 @@ and we can use own properties of element
 //tagname[contains(@propertyname, 'property value')]
 //tagname[contains(text(),'text of the element')]
 
+//phno[text()='9087394995']
+
 following-sibling
 preceding-sibling
 ancestor
@@ -40,5 +42,5 @@ instructions
 ------------
 / --> immediate child
 
-**PH: 90873949955**
+
 
