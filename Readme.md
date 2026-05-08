@@ -42,5 +42,77 @@ instructions
 ------------
 / --> immediate child
 
+FindElements Method
+---------------------
+it is used to find multiple elements
+
+what are the elements are matched with xpath
+it will featch all the elements
+and it will return list of webelements
+
+if the locator is failed find any of elements
+find_elements method will return empty list
+
+
+iframe:
+-----------
+iframe --> Inline frame
+where --> to load content from different sources
+Examples: ad
+
+<html>
+
+
+    <body>
+        <iframe>
+            <html>
+                <body>
+                    <iframe>
+                    </iframe>
+                </body>
+            </html>
+        </iframe>
+        <iframe>
+        </iframe>
+    </body
+</html>
+
+
+Desired capabilities 
+-----------------------
+it will give the configuration for the browser
+
+
+WebDriver methods
+--------------------
+switch_to
+find_element
+find_elements
+get
+quit
+close
+current_url
+title
+back
+forward
+maximize_window
+minimize_window
+refresh
+current_window_handle
+window_handles
+implicitly_wait
+
+
+
+WebElement method
+------------------
+send_keys
+click
+clear
+is_selected
+is_displayed
+is_enabled
+get_attribute
+text
 
 
