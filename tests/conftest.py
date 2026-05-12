@@ -1,3 +1,4 @@
+import base64
 import os
 import time
 
@@ -68,9 +69,12 @@ def pytest_runtest_makereport(item, call):
             file_path = os.path.join(folder, f"{item.name}_{int(time.time())}.png")
             driver.save_screenshot(file_path)
 
+            with open(file_path, "rb") as image_file:
+                encoded_image = base64.b64encode(image_file.read()).decode()
+
             #attach to report
             extra = getattr(report, "extra", [])
-            extra.append(pytest_html.extras.image(file_path))
+            extra.append(pytest_html.extras.png(encoded_image))
             report.extra = extra
 
             print("hooks is executed")

@@ -1,5 +1,7 @@
+
 import os
 import time
+from datetime import datetime, timedelta
 
 from selenium.webdriver.common.by import By
 
@@ -19,3 +21,10 @@ def take_screenshot(driver):
     file_name = f"screenshot_{int(time.time())}.png"
     file_path=os.path.join("screenshots",file_name)
     driver.save_screenshot(file_path)
+
+def generate_date(no_of_days):
+    current_date = datetime.now()
+    new_date = current_date + timedelta(no_of_days)
+
+    formatted_date= new_date.strftime("%a %b %d %Y")
+    print(formatted_date)
