@@ -115,4 +115,75 @@ is_enabled
 get_attribute
 text
 
+popups
+-------
+Alert popup 
+notification popup
+location popup
+prompt 
+calender popup
+
+Exceptions
+-------------
+DetachedShadowRootException,
+    ElementClickInterceptedException,
+    ElementNotInteractableException,
+    ElementNotSelectableException,
+    ElementNotVisibleException,
+    ImeActivationFailedException,
+    ImeNotAvailableException,
+    InsecureCertificateException,
+    InvalidArgumentException,
+    InvalidCookieDomainException,
+    InvalidCoordinatesException,
+    InvalidElementStateException,
+    InvalidSelectorException,
+    InvalidSessionIdException,
+    InvalidSwitchToTargetException,
+    JavascriptException,
+    MoveTargetOutOfBoundsException,
+    NoAlertPresentException,
+    NoSuchAttributeException,
+    NoSuchCookieException,
+    NoSuchDriverException,
+    NoSuchElementException,
+    NoSuchFrameException,
+    NoSuchShadowRootException,
+    NoSuchWindowException,
+    ScreenshotException,
+    SessionNotCreatedException,
+    StaleElementReferenceException,
+    TimeoutException,
+    UnableToSetCookieException,
+    UnexpectedAlertPresentException,
+    UnexpectedTagNameException,
+    UnknownMethodException,
+    WebDriverException,
+
+Wait statements 
+-----------------
+implicit wait
+explicit wait(WebDriver wait)
+fluent wait
+
+Synchronization
+----------------
+synchronize browser speed and selenium speed
+
+Framework
+------------
+Pytest
+POM, single tone approach
+Json/Yaml -- Environment data
+Requirements.txt
+execute the script in different browser
+report
+screenshots
+Datadriven
+util functions
+How read data from DB
+API Tests
+
+
+
 

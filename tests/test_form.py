@@ -3,6 +3,9 @@ import time
 import pytest
 from selenium.webdriver.common.by import By
 
+from utility import common_utility
+
+
 def select_day(driver, day):
     driver.find_element(By.XPATH, "//div[@aria-label='Select day' and @role='combobox']").click()
     driver.find_element(By.XPATH, "//div[@role='option']//div[text()='"+day+"']").click()
@@ -10,6 +13,10 @@ def select_day(driver, day):
 
 @pytest.mark.wip
 def test_user_is_able_to_create_account(driver):
+    common_utility.generate_date(2)
+    common_utility.generate_date(-2)
+    common_utility.generate_date(12)
+    common_utility.generate_date(-12)
     driver = driver
     driver.find_element(By.LINK_TEXT, "Create new account").click()
     create_new_account_title = driver.find_element(By.XPATH, "/html/body/div/div/div/div/div/div/div/div[1]/div/div/div/div[1]/div[1]/div/div/div/div/div/div/div/div/div/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div[2]/span/span").text
